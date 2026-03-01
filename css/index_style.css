@@ -1,17 +1,73 @@
-body { background-color: #e0f4ff; margin: 0; padding-top: 124px; } /* Light Blue background */
-ul { font-family: "League Spartan", sans-serif; list-style-type: none; position: fixed; top: 0; left: 0; margin: 0; width: 100%; height: 124px; background-color: ForestGreen; }
+/* General Layout */
+body { 
+    background-color: #f0faff; /* Light Blue tint */
+    margin: 0; 
+    padding-top: 124px; /* Space for fixed nav */
+    font-family: "Libre Baskerville", serif; /* Professional body font */
+}
+
+/* Fixed Navigation using Forest Green */
+ul { 
+    font-family: "League Spartan", sans-serif; 
+    list-style-type: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    margin: 0; 
+    width: 100%; 
+    height: 124px; 
+    background-color: ForestGreen; 
+    z-index: 1000;
+}
+
 li { float: left; font-size: 30px; font-weight: bold; padding-top: 10px; }
-li a { display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
-.active { background-color: #004d00; } /* Darker Forest Green for active */
+li a { display: block; color: #f3e2c6; text-align: center; padding: 14px 16px; text-decoration: none; }
+li a:hover:not(.active) { background-color: #228B22; } /* Darker green hover */
+.active { background-color: #004d00; }
 
-h1 { font-family: "League Spartan", sans-serif; color: white; text-align: center; padding-top: 7%; font-size: 15vh; font-weight: bold; text-shadow: 2px 2px 5px black; }
-h6 { color: white; text-align: center; font-size: 4vh; text-shadow: 2px 2px 5px black; }
+/* Hero Section Styles */
+h1 { 
+    font-family: "League Spartan", sans-serif; 
+    color: white; 
+    text-align: center; 
+    padding-top: 5%; 
+    font-size: 10vh; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 5px black; 
+}
 
-.itempic { background-color: ForestGreen; height: 60vh; width: auto; display: flex; flex-direction: column; justify-content: center; }
-.bulletin { background-color: #228B22; padding: 20px; }
-.bulletintext { font-family: "League Spartan", sans-serif; color: white; text-align: center; font-size: 6vh; }
+h6 { 
+    color: white; 
+    text-align: center; 
+    margin-top: 1vh; 
+    font-size: 4vh; 
+    text-shadow: 1px 1px 3px black;
+}
 
-.row { display: flex; flex-direction: row; }
-.column { flex: 1; padding: 20px; }
+.itempic { 
+    background-color: ForestGreen; 
+    height: 60vh; 
+    width: auto; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+/* Bulletin/Call-out Section */
+.bulletin { background-color: #ADD8E6; padding: 10px; } /* Light Blue accent */
+.bulletintext { 
+    font-family: "League Spartan", sans-serif; 
+    color: #1f1812; 
+    text-align: center; 
+    font-size: 6vh; 
+    margin: 2vh 0;
+}
+
+/* Flexbox Columns */
+.row { display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; }
+.column { flex: 1; padding: 40px; display: flex; flex-direction: column; }
 .leftcolumn { background-color: ForestGreen; color: white; }
-.rightcolumn { background-color: #ADD8E6; color: #1f1812; }
+.rightcolumn { background-color: #e0f4ff; color: #1f1812; }
+
+h2 { font-family: "League Spartan", sans-serif; font-size: 36px; font-weight: bold; margin-bottom: 10px; }
+p { font-size: 20px; line-height: 1.6; }
