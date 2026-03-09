@@ -45,7 +45,9 @@ h6 {
 }
 
 .itempic { 
-    background-color: #004d00; 
+    background-image: url('../img/tractor.avif');
+    background-size: cover;
+    background-position: center  75%;
     height: 60vh; 
     width: auto; 
     display: flex; 
